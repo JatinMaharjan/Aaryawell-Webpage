@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarya Wellness: Best Spa, Singing Bowl, Yoga and Wellness in Nepal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+#booking {
+	font-family: 'PT Sans', sans-serif;
+	background-image: url('../image/cucumber.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.booking-form {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 40px;
+	border-radius: 6px;
+}
+
+.booking-form .form-control {
+	background-color: #fff;
+	height: 50px;
+	color: #191a1e;
+	border: none;
+	font-size: 16px;
+	font-weight: 400;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 40px;
+	padding: 0px 25px;
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+	right: 10px;
+	bottom: 6px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+	display: block;
+	margin-left: 20px;
+	margin-bottom: 5px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 24px;
+	height: 24px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.booking-form .form-checkbox input {
+	position: absolute !important;
+	margin-left: -9999px !important;
+	visibility: hidden !important;
+}
+
+.booking-form .form-checkbox label {
+	position: relative;
+	padding-top: 4px;
+	padding-left: 30px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.booking-form .form-checkbox label+label {
+	margin-left: 15px;
+}
+
+.booking-form .form-checkbox input+span {
+	left: 2px;
+	top: 4px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+.booking-form .submit-btn {
+	color: #fff;
+	background-color: #f23e3e;
+	font-weight: 400;
+	height: 50px;
+	font-size: 14px;
+	border: none;
+	width: 60%;
+	border-radius: 30px;
+	text-transform: uppercase;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.footer {
+    background:rgb(172, 240, 146);
+  }
+    </style>
+    <link rel="icon" type="image/x-icon" href="/image/aarya_wellness_logo_07_BaD_icon.ico">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+        <div class="container-fluid">
+          <div class="nav-header d-flex" style="line-height: 10px">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="image/Aarya Wellness Logo-07.png" width="290" height="100"/>
+            </a>
+          </div>
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse mx-5 px-5" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item px-2">
+                    <a href="index.html" class="nav-link text-success fs-5" 
+                    ><strong>Home</strong></a
+                >
+                </li>
+                <li class="nav-item dropdown px-2">
+                    <a class="nav-link dropdown-toggle dropdown-item text-success fs-5" href="services.html"  role="" data-bs-toggle="dropdown" aria-expanded="false"
+                    >
+                    <strong>Services</strong>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                        <a class="dropdown-item text-success " href="massage.html">Massage</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-success" href="soundhealing.html">Singing Bowl Healing & Yoga</a>
+                            </li>
+                        <li>
+                        <a class="dropdown-item text-success" href="salon.html">Salon</a>
+                        </li>
+                        <li>
+                        <a class="dropdown-item text-success" href="steamandsauna.html">Steam / Sauna</a>
+                        </li>
+                        
+                        <li>
+                        <a class="dropdown-item text-success" href="therapisttrainning.html">Training</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item px-2">
+                    <a href="booking.html" class="nav-link text-success fs-5"
+                        ><strong>Booking</strong></a
+                    >
+                    </li>
+                    <li class="nav-item px-2">
+                    <a href="gallery.html" class="nav-link text-success fs-5"
+                        ><strong>Gallery</strong></a
+                    >
+                    <li class="nav-item px-2">
+                    <a href="aboutus.html" class="nav-link text-success fs-5"
+                        ><strong>About Us</strong></a
+                    >
+                    </li>
+                    <li class="nav-item px-2">
+                    <a href="contactus.html" class="nav-link text-success fs-5"
+                        ><strong>Contact Us</strong></a
+                    >
+                    <div class="text-success bg-light">
+                        <p class="bg-light" style="margin-bottom:-25px;">Opening Time: 8am - 8pm Everyday</p>
+                    </div>
+                </li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </nav>
+
+<div id="booking" class="section ">
+    <div class="section-center">
+        <div class="container-fluid pt-5 mt-5">
+            <div class="row">
+                <div class="booking-form">
+                    
+                    <div class="col-12 text-light">
+                        <p>Time: 8am to 8pm everyday!</p>
+                    </div>
+                    <div class="text-light text-center">
+                        <h3>Book Now</h3>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-2">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-light mb-4">
+                                    <label for="name" class="form-label">Name*</label>
+                                    <input type="text" name="name" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+
+                            </div>
+                            <div class="text-light mb-3 col-md-4">
+                                <label for="name" class="form-label">Mobile Number*</label>
+                                <input
+                                  type="text" name="name" class="form-control"/>
+                            </div>
+                            <div class="text-light mb-4 col-md-4">
+                                <label for="name" class="form-label">Email</label>
+                                <input
+                                  type="text" name="name" class="form-control"/>
+                            </div>
+                            <div class="col-2">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                            
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <span class="form-label">No of Person*</span>
+                                        <div class="">
+                                            <select class="form-control">
+                                                <option value="" disabled selected>--Select--</option>
+                                                <option>One</option>
+                                                <option>Two</option>
+                                                <option>Three</option>
+                                                <option>Four</option>
+                                                <option>Five</option>
+                                                <option>Six</option>
+                                                <option>Seven</option>
+                                                <option>Eight</option>
+                                                <option>Nine</option>
+                                                <option>Ten</option>
+                                            </select>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="form-label">Date</span>
+                                <input class="form-control" type="date" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-2">
+
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <span class="form-label mt-4">Massage</span>
+                                            <div class="card-body">
+
+                                                <form class="form-horizontal" method="post" name="update" id="update">
+                                                    <input type="hidden" name="action" value="edit">
+                                                    <input type="hidden" name="id" value="">
+                    
+                                                    <div class="form-group">
+                                                        <div class="">
+                                                            <select class="form-control" name="heading" required onchange="getSubheadingAsPerHeading(this)">
+                                                                <option value="" disabled selected>--Select--</option>
+                                                                <option value="Sirodhara">Sirodhara</option>
+                                                                <option value="Hot Stone Massage">Hot Stone Massage</option>
+                                                                <option value="Ayurvedic Massage">Ayurvedic Massage</option>
+                                                                <option value="Thai Massage">Thai Massage</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="form-group">
+                                                        <div class="">
+                                                            <select class="form-control" name="massage" id="massage" required>
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        <span class="select-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <span class="form-label mt-4">Salon</span>
+
+                                        <div class="card-body">
+
+                                            <form class="form-horizontal" method="post" name="update" id="update">
+                                                <input type="hidden" name="action" value="edit">
+                                                <input type="hidden" name="id" value="">
+                
+                                                <div class="form-group">
+                                                    <div class="">
+                                                        <select class="form-control" name="heading" required onchange="getSalonAsPerHeading(this)">
+                                                            <option value="" disabled selected>--Select--</option>
+                                                            <option value="Face Spa">Face Spa</option>
+                                                            <option value="Hair Spa">Hair Spa</option>
+                                                            <option value="Manicure and Pedicure">Manicure and Pedicure</option>
+                                                            <option value="Waxing">Waxing</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="form-group">
+                                                    <div class="">
+                                                        <select class="form-control" name="salon" id="salon" required>
+                                                            <option value=""></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <span class="form-label mt-4">Steam and Sauna</span>
+                                        <div class="card-body">
+
+                                            <form class="form-horizontal" method="post" name="update" id="update">
+                                                <input type="hidden" name="action" value="edit">
+                                                <input type="hidden" name="id" value="">
+                
+                                                <div class="form-group">
+                                                    <div class="">
+                                                        <select class="form-control" name="heading" required onchange="getSteamAndSaunaAsPerHeading(this)">
+                                                            <option value="" disabled selected>--Select--</option>
+                                                            <option value="Steam">Steam</option>
+                                                            <option value="Sauna">Sauna</option>
+                                                            <option value="Stea+Sauna">Steam + Sauna</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="form-group">
+                                                    <div class="">
+                                                        <select class="form-control" name="Steam and Sauna" id="Steam and Sauna" required>
+                                                            <option value=""></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <span class="form-label mt-4">Sound Healing</span>
+                                        <div class="card-body">
+
+                                            <form class="form-horizontal" method="post" name="update" id="update">
+                                                <input type="hidden" name="action" value="edit">
+                                                <input type="hidden" name="id" value="">
+                
+                                                <div class="form-group">
+                                                    <div class="">
+                                                        <select class="form-control" name="heading" required onchange="getSoundHealingAsPerHeading(this)">
+                                                            <option value="" disabled selected>--Select--</option>
+                                                            <option value="Sound Healing">Sound Healing</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="form-group">
+                                                    <div class="">
+                                                        <select class="form-control" name="Sound Healing" id="Sound Healing" required>
+                                                            <option value=""></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <button style="padding-left: 5px !important;padding-right: 5px !important;" class="submit-btn ">Book</button>
+                        </div>
+
+                        <hr class="bg-white">
+                        
+
+                    </form>
+                    <h3 class="text-light text-center mt-4">Contact Details</h3>
+                    <div class="container-fluid p-4">
+                        <div class="row">
+                            
+                            <div class="col-md-3 text-light mt-3">  
+                                <h6><Strong>whatsapp/viber:</Strong> 9801021262</h6>
+                            </div>
+                            <div class="col-md-3 text-light mt-3">
+                                <h6><Strong>Landline:</Strong> 01 - 4425386</h6>
+                            </div>
+                            <div class="col-md-3 text-light mt-3">
+                                <h6><Strong>Email:</Strong> operation@wellnesshome.com.np</h6>
+                            </div>
+                            <div class="col-md-3 text-light mt-3">
+                                <p>Nepal, kathmandu, Baluwatar, Khursanitar Street</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyrights bg-dark p-4 text-light">
+    <div class="container">
+      <div class="text-center">
+        <p class="footer-name">  &copy; 2022 Aarya Technology and Management.   All Rights Reserved. No part of this site may be reproduced without our written permission.</p>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+    function getSubheadingAsPerHeading(el) {
+        console.log(el.value, "el");
+        let heading = el.value;
+        var options = '';
+
+        if (heading == 'Sirodhara') {
+            options = '<option value="Sirodhara">90min - Rs.7000</option><option value="Sirodhara">120min - Rs.9000</option>';
+
+        } else if (heading == 'Hot Stone Massage') {
+            options = '<option value="Hot Stone Massage">90min - Rs.5000</option><option value="Hot Stone Massage">120min - Rs.7000</option>';
+
+        } else if (heading == 'Ayurvedic Massage') {
+            options = '<option value="Ayurvedic Massage">60min - Rs.3000</option><option value="Ayurvedic Massage">90min - Rs.4000</option><option value="Ayurvedic Massage">120min - Rs.5000</option>';
+
+        } else if (heading == 'Thai Massage') {
+            options = '<option value="Thai Massage">60min - Rs.3500</option><option value="Thai Massage">90min - Rs.4500</option><option value="Thai Massage">120min - Rs.5500</option>';
+
+        }
+            document.getElementById('massage').innerHTML = options;
+    }
+
+
+    function getSalonAsPerHeading(el) {
+        console.log(el.value, "el");
+        let heading = el.value;
+        var options = '';
+
+        if (heading == 'Face Spa') {
+            options = '<option value="Face Spa">60min - Rs.1500</option><option value="Face Spa">90min - Rs.2200</option> <option value="Face Spa">90min - Rs.2200</option>';
+
+        } else if (heading == 'Hair Spa') {
+            options = '<option value="Hair Spa">60min - Rs.1500</option><option value="Hair Spa">60min - Rs.1500</option><option value="Hair Spa">60min - Rs.1500</option>';
+
+        } else if (heading == 'Manicure and Pedicure') {
+            options = '<option value="Manicure and Pedicure">60min - Rs.1500</option><option value="Manicure and Pedicure">60min - Rs.1500</option><option value="Manicure and Pedicure">90min - Rs.1800</option>';
+
+        } else if (heading == 'Waxing') {
+            options = '<option value="Waxing">60min - Rs.1500</option><option value="Waxing">90min - Rs.2200</option><option value="Waxing">90min - Rs.2200</option>';
+
+        }
+            document.getElementById('salon').innerHTML = options;
+    }
+
+    function getSteamAndSaunaAsPerHeading(el) {
+        console.log(el.value, "el");
+        let heading = el.value;
+        var options = '';
+
+        if (heading == 'Steam') {
+            options = '<option value="Steam">60min - Rs.1500</option>';
+
+        } else if (heading == 'Sauna') {
+            options = '<option value="Sauna">60min - Rs.1500</option>';
+        } 
+        else if (heading == 'Stea+Sauna') {
+            options = '<option value="Sauna">60min - Rs.2000</option><option value="Sauna">60min - Rs.1500</option><option value="Sauna">60min - Rs.1500</option>';
+        } 
+
+            document.getElementById('Steam and Sauna').innerHTML = options;
+    }
+
+    function getSoundHealingAsPerHeading(el) {
+        console.log(el.value, "el");
+        let heading = el.value;
+        var options = '';
+
+        if (heading == 'Sound Healing') {
+            options = '<option value="Sound Healing">60min - Rs.1500</option><option value="Sound Healing">90min - Rs.2200</option> <option value="Sound Healing">90min - Rs.2200</option>';
+
+        }
+            document.getElementById('Sound Healing').innerHTML = options;
+    }
+
+</script>
+
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
